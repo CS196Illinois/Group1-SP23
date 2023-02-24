@@ -1,8 +1,8 @@
-# Group TEAM_NUMBER
-Group Name: TEAM_NAME
+# Group 1
+Group Name: Single SLAYdies
 
-[MVP Link](http://cs196.cs.illinois.edu)
+[MVP Link](https://docs.google.com/document/d/1tscyxoU2s0PTobuJQI9Pf1CjqtwMTPwF439_aA9XW1Q/edit?usp=sharing)
 
-Team Members: STUDENTS_NETIDS
+Team Members: ss200, divya5, jgana2, smati3
 
-Project Manager: PM_NETID
+Project Manager: yosheej2, rwuh2
