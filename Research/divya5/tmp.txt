@@ -1,4 +1,4 @@
-I adore Taylor Swift!
+I love Taylor Swift!
 
 Notes on Android Studio:
 1. Layout - how app should look
