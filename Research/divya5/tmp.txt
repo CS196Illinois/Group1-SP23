@@ -1,1 +1,9 @@
 I adore Taylor Swift!
+
+Notes on Android Studio:
+1. Layout - how app should look
+- view - rectangular area on the screen, could be buttons or hold text
+2. Activity - the code behind the layout
+- where you tell the buttons what to do
+3. we can drag whatever we want on our layout using the side bar
+- for example, we can drag a button from the side bar into our layout page
