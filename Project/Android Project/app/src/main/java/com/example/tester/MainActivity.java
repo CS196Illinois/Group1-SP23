@@ -29,9 +29,11 @@ public class MainActivity extends AppCompatActivity {
 
     private int drink_goal;
     private int exercise_goal;
-
     private int calorie_goal;
 
+    private int drink_input;
+    private int exercise_input;
+    private int calorie_input;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,10 +80,37 @@ public class MainActivity extends AppCompatActivity {
         this.calorie_goal = goal;
         System.out.println(this.calorie_goal);
     }
-
     public int getCalorie_goal() {
         return this.calorie_goal;
     }
+    
+    public int getWaterInput() {
+        return this.drink_input;
+    }
+
+    public void setWaterInput(int input) {
+        this.drink_input = input;
+        System.out.println(this.drink_input);
+    }
+
+    public int getExerciseInput() {
+        return this.exercise_input;
+    }
+
+    public void setExerciseInput(int input) {
+        this.exercise_input = input;
+        System.out.println(this.exercise_input);
+    }
+
+    public int getCalorieInput() {
+        return this.calorie_input;
+    }
+
+    public void setCalorieInput(int input) {
+        this.calorie_input = input;
+        System.out.println(this.calorie_input);
+    }
+
 
 
     @Override

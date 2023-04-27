@@ -20,8 +20,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:textSize="40sp"
+        android:layout_marginTop="5dp"
+        android:textSize="30sp"
         android:text="12 cups" />
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/buttonGroup1"
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" >
+        android:layout_marginTop="5dp" >
         <Button
             android:id="@+id/minus1"
             android:layout_width="wrap_content"
@@ -65,7 +65,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:textSize="30sp"
         android:text="Exercise"/>
     <TextView
@@ -74,8 +74,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:textSize="40sp"
+        android:layout_marginTop="5dp"
+        android:textSize="30sp"
         android:text="30 minutes" />
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/buttonGroup2"
@@ -84,7 +84,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" >
+        android:layout_marginTop="5dp" >
         <Button
             android:id="@+id/minus2"
             android:layout_width="wrap_content"
@@ -129,7 +129,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:text="500 calories" />
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/buttonGroup3"
@@ -166,6 +166,17 @@
             android:text="+"
             android:textSize="30sp" />
     </androidx.appcompat.widget.LinearLayoutCompat>
+    <Button
+        android:id="@+id/nav2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonGroup3"
+        android:backgroundTint="@color/dark_blue"
+        android:textColor="@color/white"
+        android:text="Input Today's Info"
+        android:textSize="20sp" />
 
 
 </RelativeLayout>

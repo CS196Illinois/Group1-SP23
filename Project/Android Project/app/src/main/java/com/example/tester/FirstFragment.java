@@ -34,6 +34,8 @@ public class FirstFragment extends Fragment {
     private Button submit2;
     private Button submit3;
 
+    private Button route;
+
     private FragmentFirstBinding binding;
 
     @Override
@@ -125,6 +127,14 @@ public class FirstFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 ((MainActivity)getActivity()).setCalorieGoal(count3);
+            }
+        });
+        route = (Button) getView().findViewById(R.id.nav2);
+        route.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(FirstFragment.this)
+                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
             }
         });
 
