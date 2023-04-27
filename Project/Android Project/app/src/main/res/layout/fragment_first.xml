@@ -4,123 +4,181 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstFragment">
+    tools:context=".MainActivity">
+
     <TextView
-        android:id="@+id/goalWater"
+        android:id="@+id/waterGoal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:textSize="30sp"
-        android:text="Daily Water Intake Goal" />
+        android:text="Water Intake"/>
     <TextView
-        android:id="@+id/counterTxt"
-        android:layout_below="@id/goalWater"
+        android:id="@+id/counterTxt1"
+        android:layout_below="@id/waterGoal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:textSize="40sp"
-        android:text="13 Cups" />
+        android:layout_marginTop="5dp"
+        android:textSize="30sp"
+        android:text="12 cups" />
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/buttongroup"
-        android:layout_below="@id/counterTxt"
+        android:id="@+id/buttonGroup1"
+        android:layout_below="@id/counterTxt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" >
         <Button
-            android:id="@+id/minus"
+            android:id="@+id/minus1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/dark_blue"
+            android:textColor="@color/white"
             android:text="-"
-            android:textSize="30sp"/>
+            android:textSize="30sp" />
         <Button
-            android:id="@+id/reset"
+            android:id="@+id/submit1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/dark_blue"
-            android:text="Reset"
+            android:backgroundTint="@color/light_blue"
+            android:textColor="@color/white"
+            android:text="Submit"
             android:textSize="30sp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"/>
-
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp" />
         <Button
-            android:id="@+id/plus"
+            android:id="@+id/plus1"
             android:layout_width="wrap_content"
-            android:backgroundTint="@color/dark_blue"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_blue"
+            android:textColor="@color/white"
             android:text="+"
-            android:textSize="30sp"/>
-
+            android:textSize="30sp" />
     </androidx.appcompat.widget.LinearLayoutCompat>
+
     <TextView
-        android:id="@+id/goalExercise"
-        android:layout_below="@id/buttongroup"
+        android:id="@+id/exerciseGoal"
+        android:layout_below="@+id/buttonGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:text="Exercise"/>
+    <TextView
+        android:id="@+id/counterTxt2"
+        android:layout_below="@id/exerciseGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="30sp"
+        android:text="30 minutes" />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/buttonGroup2"
+        android:layout_below="@id/counterTxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" >
+        <Button
+            android:id="@+id/minus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_blue"
+            android:textColor="@color/white"
+            android:text="-"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/submit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/light_blue"
+            android:textColor="@color/white"
+            android:text="Submit"
+            android:textSize="30sp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp" />
+        <Button
+            android:id="@+id/plus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_blue"
+            android:textColor="@color/white"
+            android:text="+"
+            android:textSize="30sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/moveGoal"
+        android:layout_below="@+id/buttonGroup2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:textSize="30sp"
-        android:text="Daily Exercise Goal" />
+        android:text="Calories Burned"/>
     <TextView
-        android:id="@+id/counterTxtExercise"
-        android:layout_below="@id/goalExercise"
+        android:id="@+id/counterTxt3"
+        android:layout_below="@id/moveGoal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:textSize="40sp"
-        android:text="45 Minutes" />
+        android:textSize="30sp"
+        android:text="500 calories" />
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/buttongroup2"
-        android:layout_below="@id/counterTxtExercise"
+        android:id="@+id/buttonGroup3"
+        android:layout_below="@id/counterTxt3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" >
         <Button
-            android:id="@+id/minusEx"
-            android:backgroundTint="@color/dark_blue"
+            android:id="@+id/minus3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_blue"
+            android:textColor="@color/white"
             android:text="-"
-            android:textSize="30sp"/>
+            android:textSize="30sp" />
         <Button
-            android:id="@+id/resetEx"
-            android:backgroundTint="@color/dark_blue"
+            android:id="@+id/submit3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Reset"
+            android:backgroundTint="@color/light_blue"
+            android:textColor="@color/white"
+            android:text="Submit"
             android:textSize="30sp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"/>
-
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp" />
         <Button
-            android:id="@+id/plusEx"
-            android:backgroundTint="@color/dark_blue"
+            android:id="@+id/plus3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_blue"
+            android:textColor="@color/white"
             android:text="+"
-            android:textSize="30sp"/>
-
+            android:textSize="30sp" />
     </androidx.appcompat.widget.LinearLayoutCompat>
     <Button
-        android:id="@+id/submit_goals"
-        android:layout_below="@id/buttongroup2"
+        android:id="@+id/nav2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonGroup3"
         android:backgroundTint="@color/dark_blue"
-        android:text="Submit"
-        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:text="Input Today's Info"
+        android:textSize="20sp" />
 
-        android:layout_marginTop="40dp"/>
+
 </RelativeLayout>
-
-
 
 
