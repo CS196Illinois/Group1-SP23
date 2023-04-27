@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Today's Log"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="34sp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/goalWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textSize="30sp"
+        android:text= "Daily Water Intake"/>
+    <TextView
+        android:id="@+id/counterTxt"
+        android:layout_below = "@id/goalWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="40sp"
+        android:text="12 Cups" />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/buttonGroup1"
+        android:layout_below="@id/counterTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop = "10dp"
+        android:layout_centerHorizontal ="true" >
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_blue"
+            android:text="-"
+            android:textSize="30sp" />
+        <Button
+            android:id = "@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_blue"
+            android:text="Submit"
+            android:textSize="30sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:backgroundTint="@color/dark_blue"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="30sp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+            android:id="@+id/goalExercise"
+            android:layout_below="@id/buttonGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal ="true"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            android:text="Daily Exercise" />
+    <TextView
+            android:id="@+id/counterTxtExercise"
+            android:layout_below="@id/goalExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="40sp"
+            android:text="30 Minutes" />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/buttonGroup2"
+        android:layout_below="@id/counterTxtExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop = "10dp"
+        android:layout_centerHorizontal ="true" >
+        <Button
+            android:id="@+id/minusEx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_blue"
+            android:text="-"
+            android:textSize="30sp" />
+        <Button
+            android:id = "@+id/resetEx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_blue"
+            android:text="Submit"
+            android:textSize="30sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <Button
+            android:id="@+id/plusEx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_blue"
+            android:text="+"
+            android:textSize="30sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/goalCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonGroup2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:text= "Daily Calories Burned"/>
+    <TextView
+        android:id="@+id/counterTxtCalories"
+        android:layout_below = "@id/goalCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="40sp"
+        android:text="500 Calories" />
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/buttonGroup3"
+        android:layout_below="@id/counterTxtCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop = "10dp"
+        android:layout_centerHorizontal ="true" >
+        <Button
+            android:id="@+id/minus3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_blue"
+            android:text="-"
+            android:textSize="30sp" />
+        <Button
+            android:id = "@+id/reset3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_blue"
+            android:text="Submit"
+            android:textSize="30sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:id="@+id/plus3"
+            android:layout_width="wrap_content"
+            android:backgroundTint="@color/dark_blue"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="30sp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

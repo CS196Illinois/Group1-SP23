@@ -1,1 +1,14 @@
 Tennis is slay!
+
+Research for android app:
+- Create your first project
+	- Files can be found under "Android" dropdown on the left
+- Explore the Layout Editor
+	- Palette
+	- Component Editor
+	- Design Editor
+	- Attributes Panel
+- Add color resources
+- Add views and constraints
+	- Go to "Palette" to make a new button
+	- Can create constrainsts with the constraint widget
