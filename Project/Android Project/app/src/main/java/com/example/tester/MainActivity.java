@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     private int drink_goal;
     private int exercise_goal;
 
+    private int calorie_goal;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +72,15 @@ public class MainActivity extends AppCompatActivity {
 
     public int getDrink_goal() {
         return this.drink_goal;
+    }
+
+    public void setCalorieGoal(int goal) {
+        this.calorie_goal = goal;
+        System.out.println(this.calorie_goal);
+    }
+
+    public int getCalorie_goal() {
+        return this.calorie_goal;
     }
 
 
