@@ -166,16 +166,17 @@
             android:text="+"
             android:textSize="30sp" />
     </androidx.appcompat.widget.LinearLayoutCompat>
+
     <Button
         android:id="@+id/nav2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/buttonGroup3"
+        android:layout_marginTop="54dp"
         android:backgroundTint="@color/dark_blue"
-        android:textColor="@color/white"
         android:text="Input Today's Info"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
         android:textSize="20sp" />
 
 

@@ -56,21 +56,17 @@ public class Welcome extends Fragment{
 
         //skeleton function for setting the text of one of the goals for the day
 
-        /*
         waterTxt = (TextView) getView().findViewById(R.id.textView3);
-        *variable with today's water intake* = *getter for water intake*
-        waterTxt.setText( "Today's water intake: + *variable with todays water intake* + cups");
-
-         */
-//        binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                NavHostFragment.findNavController(FirstFragment.this)
-//                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
-//            }
-//        });
-    }
-
+        int todayWater = ((MainActivity)getActivity()).getWaterInput();
+        waterTxt.setText( "Today's water intake:" + todayWater + " cups");
+        //binding..setOnClickListener(new View.OnClickListener() {
+           // @Override
+            //public void onClick(View view) {
+        // NavHostFragment.findNavController(FirstFragment.this)
+                       // .navigate(R.id.action_FirstFragment_to_SecondFragment);
+            }
+      //  });
+ //   }
 
 
 
@@ -80,3 +76,4 @@ public class Welcome extends Fragment{
         binding = null;
     }
 }
+

@@ -2,6 +2,7 @@ package com.example.tester;
 
 import android.os.Bundle;
 
+import com.example.tester.databinding.ContentMainBinding;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
