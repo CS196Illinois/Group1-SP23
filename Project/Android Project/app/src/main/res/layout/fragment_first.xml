@@ -172,7 +172,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonGroup3"
-        android:layout_marginTop="54dp"
+        android:layout_marginTop="30dp"
         android:backgroundTint="@color/dark_blue"
         android:text="Input Today's Info"
         android:layout_centerHorizontal="true"

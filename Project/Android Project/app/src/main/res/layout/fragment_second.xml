@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:textSize="30sp"
         android:text= "Daily Water Intake"/>
     <TextView
@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:textSize="30sp"
         android:text="12 Cups" />
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -72,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal ="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:textSize="30sp"
         android:text="Daily Exercise" />
     <TextView
@@ -81,7 +81,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:textSize="30sp"
         android:text="30 Minutes" />
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -124,7 +124,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonGroup2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:textSize="30sp"
         android:text= "Daily Calories Burned"/>
     <TextView
@@ -133,7 +133,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:textSize="30sp"
         android:text="500 Calories" />
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -173,7 +173,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonGroup3"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="25dp"
         android:backgroundTint="@color/dark_yellow"
         android:text="Return to Home"
         android:layout_centerHorizontal="true"

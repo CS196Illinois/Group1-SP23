@@ -1,0 +1,35 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color dark_blue
+color dark_yellow
+color light_blue
+color light_yellow
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id buttonGroup1
+id buttonGroup2
+id buttonGroup3
+id counterTxt1
+id counterTxt2
+id counterTxt3
+id exerciseGoal
+id minus1
+id minus2
+id minus3
+id moveGoal
+id plus1
+id plus2
+id plus3
+id submit1
+id submit2
+id submit3
+id waterGoal
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.MyApplication
+xml backup_rules
+xml data_extraction_rules
