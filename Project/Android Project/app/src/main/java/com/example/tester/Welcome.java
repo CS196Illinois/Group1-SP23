@@ -59,6 +59,14 @@ public class Welcome extends Fragment{
         waterTxt = (TextView) getView().findViewById(R.id.textView3);
         int todayWater = ((MainActivity)getActivity()).getWaterInput();
         waterTxt.setText( "Today's water intake:" + todayWater + " cups");
+
+        exerciseTxt = (TextView) getView().findViewById(R.id.textView4);
+        int todayEx = ((MainActivity)getActivity()).getExerciseInput();
+        waterTxt.setText( "Today's exercise duration: " + todayEx + " minutes");
+
+        caloriesTxt = (TextView) getView().findViewById(R.id.textView5);
+        int todayCal = ((MainActivity)getActivity()).getWaterInput();
+        waterTxt.setText( "Today's calories burned: " + todayCal + " calories");
         //binding..setOnClickListener(new View.OnClickListener() {
            // @Override
             //public void onClick(View view) {
