@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.tester.databinding.FragmentFirstBinding;
+import com.example.tester.databinding.WelcomeBinding;
 
 public class Welcome extends Fragment{
 
@@ -20,12 +20,14 @@ public class Welcome extends Fragment{
     private TextView waterTxt;
     private TextView exerciseTxt;
     private TextView caloriesTxt;
-    private TextView goalsTxt;
+    private TextView goalWaterTxt;
+    private TextView goalExerciseTxt;
+    private TextView goalCaloriesTxt;
 
     private Button addData;
     private Button goals;
 
-    private FragmentFirstBinding binding;
+    private  WelcomeBinding binding;
 
     @Override
     public View onCreateView(
@@ -33,22 +35,22 @@ public class Welcome extends Fragment{
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentFirstBinding.inflate(inflater, container, false);
+        binding = WelcomeBinding.inflate(inflater, container, false);
         return binding.getRoot();
 
     }
-    private View.OnClickListener clickListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            switch(view.getId()) {
-                case R.id.addData:
-                    break;
-                case R.id.goals:
-                    break;
-            }
-
-        }
-    };
+//    private View.OnClickListener clickListener = new View.OnClickListener() {
+//        @Override
+//        public void onClick(View view) {
+//            switch(view.getId()) {
+//                case R.id.addData:
+//                    break;
+//                case R.id.goals:
+//                    break;
+//            }
+//
+//        }
+//    };
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -61,13 +63,16 @@ public class Welcome extends Fragment{
 
         exerciseTxt = (TextView) getView().findViewById(R.id.textView4);
         int todayEx = ((MainActivity) getActivity()).getExerciseInput();
-        waterTxt.setText("Today's exercise duration: " + todayEx + " minutes");
+        exerciseTxt.setText("Today's exercise duration: " + todayEx + " minutes");
 
         caloriesTxt = (TextView) getView().findViewById(R.id.textView5);
-        int todayCal = ((MainActivity) getActivity()).getWaterInput();
-        waterTxt.setText("Today's calories burned: " + todayCal + " calories");
+        int todayCal = ((MainActivity) getActivity()).getCalorieInput();
+        caloriesTxt.setText("Today's calories burned: " + todayCal + " calories");
 
-        goalsTxt = (TextView) getView().findViewById(R.id.textView2);
+        goalWaterTxt = (TextView) getView().findViewById(R.id.textView6);
+        goalExerciseTxt = (TextView) getView().findViewById(R.id.textView7);
+        goalCaloriesTxt = (TextView) getView().findViewById(R.id.textView8);
+
 
         int count = 0;
         if (todayEx >= ((MainActivity) getActivity()).getExerciseGoal()) {
@@ -79,7 +84,15 @@ public class Welcome extends Fragment{
         }
 
         int percentGoals = (count / 3) * 100;
-        goalsTxt.setText(percentGoals + "%" );
+//        goalsTxt.setText(percentGoals + "%" );
+
+        float waterPercent = (float)todayWater / (float)((MainActivity) getActivity()).getDrink_goal();
+        float exercisePercent = (float)todayEx / (float)((MainActivity) getActivity()).getExerciseGoal();
+        float caloriePercent = (float)todayCal / (float)((MainActivity) getActivity()).getCalorie_goal();
+
+        goalWaterTxt.setText("Percent Water Goal: " + waterPercent * 100 + "%");
+        goalExerciseTxt.setText("Percent Exercise Goal: " + exercisePercent * 100 + "%");
+        goalCaloriesTxt.setText("Percent Calories Goal: " + caloriePercent * 100 + "%");
 
 
         addData = (Button) getView().findViewById(R.id.addData);
