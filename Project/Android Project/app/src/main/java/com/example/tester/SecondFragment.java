@@ -33,6 +33,8 @@ public class SecondFragment extends Fragment {
     private Button submit2;
     private Button submit3;
 
+    private Button route;
+
     private FragmentSecondBinding binding;
 
     @Override
@@ -124,7 +126,17 @@ public class SecondFragment extends Fragment {
                 ((MainActivity)getActivity()).setCalorieInput(count3);
             }
         });
+        route = (Button) getView().findViewById(R.id.nav3);
+        route.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(SecondFragment.this)
+                        .navigate(R.id.action_SecondFragment_to_welcome);
+            }
 
+            private void navigate(int action_secondFragment_to_welcome) {
+            }
+        });
 
 //        binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
 //            @Override
